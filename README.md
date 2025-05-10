@@ -1,5 +1,4 @@
-````markdown
-# Merlin Monitor 🔭
+# Merlin Monitor 🔭 ***IN DEVELOPMENT***
 
 ![Build Status](https://example.com/build/status.svg) ![PyPI](https://img.shields.io/pypi/v/merlin-monitor)
 
@@ -236,6 +235,3 @@ Please adhere to the existing code style and include documentation updates for a
 ## License
 
 Distributed under the **MIT License**. See the [LICENSE](LICENSE) file for full details.
-
-```
-```
