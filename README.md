@@ -97,13 +97,13 @@ merlin status --once
 
 *Example Output:*
 
-```
+
 CHECK   STATUS  METRIC              VALUE    DETAILS
 CPU     OK      usage_percent       12.3%    All cores normal
 RAM     WARN    used_mb/total_mb    6144/8192 High memory usage
 Disk    CRIT    free_percent        5.4%     Root partition low
 Network OK      packet_loss         0.01%    Stable link
-```
+
 
 ### Continuous Monitoring
 
