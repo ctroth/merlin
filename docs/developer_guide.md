@@ -1,6 +1,6 @@
-# Developer Guide for Building Argus (Deep Dive)
+# Developer Guide for Building Merlin (Deep Dive)
 
-A comprehensive, step-by-step guide to designing, developing, testing, and deploying Argus Monitor. This document provides detailed instructions, best practices, and code examples to help you build a robust, maintainable, and extensible system monitoring tool.
+A comprehensive, step-by-step guide to designing, developing, testing, and deploying Merlin Monitor. This document provides detailed instructions, best practices, and code examples to help you build a robust, maintainable, and extensible system monitoring tool.
 
 ---
 
@@ -67,7 +67,7 @@ Before writing any code, prepare your development environment to ensure consiste
 Create a standardized layout to separate concerns and facilitate growth.
 
 ```text
-argus-monitor/
+merlin-monitor/
 ├── README.md
 ├── LICENSE
 ├── pyproject.toml        # Build config and metadata
@@ -75,7 +75,7 @@ argus-monitor/
 ├── config/               # Default and example config files
 │   ├── config.yaml
 │   └── config.example.json
-├── argus/                # Main package
+├── merlin/                # Main package
 │   ├── __init__.py
 │   ├── cli.py
 │   ├── config.py
@@ -122,13 +122,13 @@ argus-monitor/
 Define a clear contract for all metric checks.
 
 ```python
-# argus/checks/base.py
+# merlin/checks/base.py
 from abc import ABC, abstractmethod
 from typing import Dict, Any, Optional
 
 class Check(ABC):
     """
-    Base class for all Argus checks.
+    Base class for all Merlin checks.
 
     Attributes:
       name:            Unique check name used in config and reporting.
@@ -177,7 +177,7 @@ Follow the pattern below for each resource:
 ### 4.1 CPU Check
 
 ```python
-# argus/checks/cpu_check.py
+# merlin/checks/cpu_check.py
 from .base import Check
 import psutil
 
@@ -199,7 +199,7 @@ class CPUCheck(Check):
 ### 4.2 RAM Check
 
 ```python
-# argus/checks/ram_check.py
+# merlin/checks/ram_check.py
 from .base import Check
 import psutil
 
@@ -227,7 +227,7 @@ class RAMCheck(Check):
 
 ## 5. Configuration Management & Validation
 
-Implement `load_config()` in `argus/config.py` to centralize settings:
+Implement `load_config()` in `merlin/config.py` to centralize settings:
 
 ```python
 import os, json, yaml
@@ -255,7 +255,7 @@ def load_config(path: str = None) -> Dict:
 
 ## 6. Building the CLI with Click
 
-Setup commands, options, and help text in `argus/cli.py`:
+Setup commands, options, and help text in `merlin/cli.py`:
 
 ```python
 import click
@@ -265,7 +265,7 @@ from .logger import setup_logging
 
 @click.group()
 def cli():
-    """Argus Monitor CLI"""
+    """Merlin Monitor CLI"""
     pass
 
 @cli.command()
@@ -290,7 +290,7 @@ Add subcommands for `checks`, `report`, `version`, and shell `completion` to rou
 
 ## 7. Scheduler & Orchestration
 
-Encapsulate job scheduling in `argus/scheduler.py`:
+Encapsulate job scheduling in `merlin/scheduler.py`:
 
 ```python
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -325,7 +325,7 @@ class Scheduler:
 
 ## 8. Core Execution & Aggregation
 
-In `argus/core.py`, dynamically load checks and gather results:
+In `merlin/core.py`, dynamically load checks and gather results:
 
 ```python
 import importlib, pkgutil, socket, time
@@ -335,9 +335,9 @@ class Core:
         self.config = config
 
     def _discover_checks(self):
-        import argus.checks as package
+        import merlin.checks as package
         for _, name, _ in pkgutil.iter_modules(package.__path__):
-            module = importlib.import_module(f'argus.checks.{name}')
+            module = importlib.import_module(f'merlin.checks.{name}')
             for attr in dir(module):
                 cls = getattr(module, attr)
                 if isinstance(cls, type) and issubclass(cls, package.base.Check) and cls is not package.base.Check:
@@ -362,7 +362,7 @@ class Core:
 
 ## 9. Reporting & Output
 
-Design `argus/report.py` to support multiple output sinks:
+Design `merlin/report.py` to support multiple output sinks:
 
 ```python
 import json
@@ -397,7 +397,7 @@ Extend `Reporter` to push to databases, files, or alerts via plugin registration
 
 ## 10. Logging Best Practices
 
-Centralize logging setup in `argus/logger.py`:
+Centralize logging setup in `merlin/logger.py`:
 
 ```python
 import logging
@@ -409,7 +409,7 @@ def setup_logging(level: str = 'INFO'):
         format='%(asctime)s %(levelname)s %(name)s: %(message)s',
         handlers=[RichHandler(rich_tracebacks=True)]
     )
-    return logging.getLogger('argus')
+    return logging.getLogger('merlin')
 ```
 
 * Use named loggers per module (`logger = logging.getLogger(__name__)`).
@@ -428,13 +428,13 @@ Ensure reliability with a thorough test suite:
 * **Coverage**: Aim for >90% code coverage with `pytest-cov`:
 
   ```bash
-  pytest --cov=argus --cov-report=term-missing
+  pytest --cov=merlin --cov-report=term-missing
   ```
 * **Static Analysis**: Enforce type checking and lint compliance:
 
   ```bash
-  mypy argus
-  flake8 argus
+  mypy merlin
+  flake8 merlin
   ```
 
 ---
@@ -447,7 +447,7 @@ Prepare for open-source release:
 
    ```toml
    [project]
-   name = "argus-monitor"
+   name = "merlin-monitor"
    version = "0.1.0"
    description = "Lightweight system monitoring tool"
    authors = [ {name="Your Name", email="you@example.com"} ]
@@ -456,7 +456,7 @@ Prepare for open-source release:
 2. **Build**:
 
    ```bash
-   python -m build  # Generates dist/argus-monitor-0.1.0*.whl
+   python -m build  # Generates dist/merlin-monitor-0.1.0*.whl
    ```
 3. **Publish**:
 
@@ -484,4 +484,4 @@ For long-term analysis and dashboarding:
 * **Secure Transport**: Use HTTPS/TLS for remote webhooks and persistence endpoints.
 * **Audit Logging**: Track configuration loads and critical errors for post-incident analysis.
 
-Congratulations! You now have a detailed blueprint to architect, develop, test, and release Argus Monitor as a production-ready open-source project.
+Congratulations! You now have a detailed blueprint to architect, develop, test, and release Merlin Monitor as a production-ready open-source project.

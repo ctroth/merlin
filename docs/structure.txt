@@ -1,10 +1,10 @@
-argus-monitor/
+merlin-monitor/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 ├── pyproject.toml            # or setup.py + requirements.txt
 │
-├── argus/                    # main package
+├── merlin/                    # main package
 │   ├── __init__.py
 │   ├── cli.py                # CLI entrypoint and argument parsing
 │   ├── config.py             # load thresholds, polling intervals, output formats

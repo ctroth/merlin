@@ -1,7 +1,7 @@
 ````markdown
 # Usage Guide
 
-A comprehensive reference for all Argus commands, flags, and examples, designed to help both beginners and advanced users integrate Argus Monitor into their workflows.
+A comprehensive reference for all Merlin commands, flags, and examples, designed to help both beginners and advanced users integrate Merlin Monitor into their workflows.
 
 ## Table of Contents
 
@@ -37,13 +37,13 @@ Run all enabled checks and display results. By default, performs one-off checks 
 
 ```bash
 # One-time snapshot of system health
-argus status --once
+merlin status --once
 
 # Poll every 30 seconds continuously
-argus status --interval 30
+merlin status --interval 30
 
 # Include JSON output and verbose logs
-argus status -i 15 -o json -v
+merlin status -i 15 -o json -v
 ````
 
 **Key Options:**
@@ -58,16 +58,16 @@ argus status -i 15 -o json -v
 Manage and inspect available metric checks.
 
 ```bash
-# List all built-in checks by name\nargus checks --list
+# List all built-in checks by name\nmerlin checks --list
 
-# Describe CPU check details and default thresholds\nargus checks describe cpu
+# Describe CPU check details and default thresholds\nmerlin checks describe cpu
 
-# Enable a built-in check temporarily\nargus checks enable gpu --once
+# Enable a built-in check temporarily\nmerlin checks enable gpu --once
 ```
 
 **Subcommands:**
 
-* `list`: Show names of all checks in `argus/checks/`.
+* `list`: Show names of all checks in `merlin/checks/`.
 * `describe <name>`: Show metric names, units, and default warn/crit values.
 * `enable <name>`: Temporarily enable a check for one run.
 
@@ -76,10 +76,10 @@ Manage and inspect available metric checks.
 Generate or export historical and one-off reports. Requires enabling persistence in config.
 
 ```bash
-# Export JSON report for last 24 hours\nargus report --since 24h --output json > last_day.json
+# Export JSON report for last 24 hours\nmerlin report --since 24h --output json > last_day.json
 
 # Show human-readable report table for yesterday
-argus report --since "2025-05-07" --until "2025-05-08"
+merlin report --since "2025-05-07" --until "2025-05-08"
 ```
 
 **Key Options:**
@@ -90,11 +90,11 @@ argus report --since "2025-05-07" --until "2025-05-08"
 
 ### version
 
-Display the installed Argus Monitor version and exit.
+Display the installed Merlin Monitor version and exit.
 
 ```bash
-argus version
-# Output: Argus Monitor v0.2.0
+merlin version
+# Output: Merlin Monitor v0.2.0
 ```
 
 ### completion
@@ -103,10 +103,10 @@ Generate shell completion scripts.
 
 ```bash
 # Bash completion
-eval "$(argus completion bash)"
+eval "$(merlin completion bash)"
 
 # Zsh completion
-eval "$(argus completion zsh)"
+eval "$(merlin completion zsh)"
 ```
 
 ## Environment Variables
@@ -123,7 +123,7 @@ Override CLI defaults with these environment variables. Values take precedence o
 
 ## Exit Codes
 
-Argus returns specific exit codes to indicate overall status, useful for scripts and automation:
+Merlin returns specific exit codes to indicate overall status, useful for scripts and automation:
 
 | Code | Meaning                                  |
 | ---- | ---------------------------------------- |
@@ -140,7 +140,7 @@ Argus returns specific exit codes to indicate overall status, useful for scripts
 Append continuous logs to a timestamped file:
 
 ```bash
-argus status --interval 60 >> /var/log/argus/$(date +%F_%T).log
+merlin status --interval 60 >> /var/log/merlin/$(date +%F_%T).log
 ```
 
 ### Filtering Critical Alerts
@@ -148,20 +148,20 @@ argus status --interval 60 >> /var/log/argus/$(date +%F_%T).log
 Use `jq` to filter CRIT statuses from JSON output:
 
 ```bash
-argus status --once --output json | jq '.[] | select(.status == "CRIT")'
+merlin status --once --output json | jq '.[] | select(.status == "CRIT")'
 ```
 
 ### Systemd Service
 
-Create a service unit at `/etc/systemd/system/argus.service`:
+Create a service unit at `/etc/systemd/system/merlin.service`:
 
 ```ini
 [Unit]
-Description=Argus Monitor Service
+Description=Merlin Monitor Service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/argus status --interval 60
+ExecStart=/usr/local/bin/merlin status --interval 60
 Restart=always
 
 [Install]
@@ -171,19 +171,19 @@ WantedBy=multi-user.target
 Enable and start:
 
 ```bash
-systemctl enable argus
-systemctl start argus
+systemctl enable merlin
+systemctl start merlin
 ```
 
 ## Troubleshooting
 
 * **Permission Denied**: On Linux, give read access to `/proc` or run as root.
-* **Missing Checks**: Confirm `enabled_checks` in config matches filenames in `argus/checks/` (without `.py`).
+* **Missing Checks**: Confirm `enabled_checks` in config matches filenames in `merlin/checks/` (without `.py`).
 * **WMI Errors**: On Windows, ensure WMI service is running and CLI is elevated.
 * **Scheduler Failures**: Check logs for backoff/retry messages; adjust `retry_backoff` and `max_retries` settings.
 * **Completion Scripts**: Ensure your shell is configured to load completion scripts on startup.
 
-For more help, visit the [official documentation](https://github.com/yourusername/argus-monitor/wiki) or raise an issue on GitHub.
+For more help, visit the [official documentation](https://github.com/yourusername/merlin-monitor/wiki) or raise an issue on GitHub.
 
 ```
 ```
