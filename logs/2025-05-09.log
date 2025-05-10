@@ -1,0 +1,212 @@
+2025-05-09 18:00:23 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 18:00:34 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 18:00:36 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 18:13:40 - ERROR - Error retrieving CPU information on Windows: name 'psutile' is not defined
+2025-05-09 18:13:40 - INFO - CPU check completed successfully
+2025-05-09 18:14:15 - ERROR - Error retrieving CPU information on Windows: module 'psutil' has no attribute 'sensors_temperatures'
+2025-05-09 18:14:15 - INFO - CPU check completed successfully
+2025-05-09 18:15:45 - ERROR - Error retrieving CPU information on Windows: module 'psutil' has no attribute 'sensors_temperatures'
+2025-05-09 18:15:45 - INFO - CPU check completed successfully
+2025-05-09 18:16:11 - ERROR - Error retrieving CPU information on Windows: module 'psutil' has no attribute 'sensors_temperatures'
+2025-05-09 18:16:11 - INFO - CPU check completed successfully
+2025-05-09 18:16:19 - ERROR - Error retrieving CPU information on Windows: module 'psutil' has no attribute 'sensors_temperatures'
+2025-05-09 18:16:19 - INFO - CPU check completed successfully
+2025-05-09 18:28:21 - INFO - Ran disk check.  Found device: A:\
+2025-05-09 18:28:21 - INFO - Ran disk check.  Found device: B:\
+2025-05-09 18:28:21 - INFO - Ran disk check.  Found device: C:\
+2025-05-09 18:28:21 - INFO - Ran disk check.  Found device: D:\
+2025-05-09 18:28:21 - INFO - Ran disk check.  Found device: G:\
+2025-05-09 18:28:21 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:28:21 - INFO - Disk check completed successfully
+2025-05-09 18:45:52 - INFO - Successfully retrieved Disk information on Windows
+2025-05-09 18:45:52 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:45:52 - INFO - Disk check completed successfully
+2025-05-09 18:47:55 - INFO - Successfully retrieved Disk information on Windows
+2025-05-09 18:47:55 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:47:55 - INFO - Disk check completed successfully
+2025-05-09 18:48:38 - ERROR - Error retrieving disk information on Windows: name 'n' is not defined
+2025-05-09 18:48:38 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:48:38 - INFO - Disk check completed successfully
+2025-05-09 18:51:30 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:51:30 - INFO - Disk check completed successfully
+2025-05-09 18:52:22 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:52:22 - INFO - Disk check completed successfully
+2025-05-09 18:53:59 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:53:59 - INFO - Disk check completed successfully
+2025-05-09 18:55:05 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:55:05 - INFO - Disk check completed successfully
+2025-05-09 18:55:48 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:55:48 - INFO - Disk check completed successfully
+2025-05-09 18:56:18 - ERROR - Error retrieving disk information on Windows: 'NoneType' object has no attribute 'round'
+2025-05-09 18:56:18 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:56:18 - INFO - Disk check completed successfully
+2025-05-09 18:56:39 - ERROR - Error retrieving disk information on Windows: 'NoneType' object has no attribute 'round'
+2025-05-09 18:56:39 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:56:39 - INFO - Disk check completed successfully
+2025-05-09 18:58:33 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 18:58:33 - INFO - Disk check completed successfully
+2025-05-09 19:00:42 - ERROR - Error retrieving disk information on Windows: 'sdiskpart' object has no attribute 'name'
+2025-05-09 19:00:42 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:00:42 - INFO - Disk check completed successfully
+2025-05-09 19:01:33 - ERROR - Error retrieving disk information on Windows: 'sdiskpart' object has no attribute 'name'
+2025-05-09 19:01:33 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:01:33 - INFO - Disk check completed successfully
+2025-05-09 19:01:49 - ERROR - Error retrieving disk information on Windows: 'sdiskpart' object has no attribute 'name'
+2025-05-09 19:01:49 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:01:49 - INFO - Disk check completed successfully
+2025-05-09 19:02:03 - ERROR - Error retrieving disk information on Windows: 'sdiskpart' object has no attribute 'name'
+2025-05-09 19:02:03 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:02:03 - INFO - Disk check completed successfully
+2025-05-09 19:02:37 - ERROR - Error retrieving disk information on Windows: 'sdiskpart' object has no attribute 'name'
+2025-05-09 19:02:37 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:02:37 - INFO - Disk check completed successfully
+2025-05-09 19:03:20 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:03:20 - INFO - Disk check completed successfully
+2025-05-09 19:04:39 - INFO - Partition: A:\ | Size: 4000768323584 | Used: 2775926378496 | Free: 1224841945088 | Percent: 69.4% | I/O: None
+2025-05-09 19:04:39 - INFO - Partition: B:\ | Size: 2000381014016 | Used: 276246528 | Free: 2000104767488 | Percent: 0.0% | I/O: None
+2025-05-09 19:04:39 - INFO - Partition: C:\ | Size: 999173386240 | Used: 876666695680 | Free: 122506690560 | Percent: 87.7% | I/O: None
+2025-05-09 19:04:39 - INFO - Partition: D:\ | Size: 2000381014016 | Used: 9481441280 | Free: 1990899572736 | Percent: 0.5% | I/O: None
+2025-05-09 19:04:39 - INFO - Partition: G:\ | Size: 999173386240 | Used: 882792030208 | Free: 116381356032 | Percent: 88.4% | I/O: None
+2025-05-09 19:04:39 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:04:39 - INFO - Disk check completed successfully
+2025-05-09 19:06:23 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 19:06:23 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 19:06:23 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 876655566848 Bytes | Free: 122517819392 Bytes | Percentage Used: 87.7%
+2025-05-09 19:06:23 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481441280 Bytes | Free: 1990899572736 Bytes | Percentage Used: 0.5%
+2025-05-09 19:06:23 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 882781458432 Bytes | Free: 116391927808 Bytes | Percentage Used: 88.4%
+2025-05-09 19:06:23 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:06:23 - INFO - Disk check completed successfully
+2025-05-09 19:16:23 - WARNING - Disk I/O information not available for partition: A:\
+2025-05-09 19:16:23 - ERROR - Error retrieving disk information on Windows: cannot access local variable 'partition_read_count' where it is not associated with a value
+2025-05-09 19:16:23 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:16:23 - INFO - Disk check completed successfully
+2025-05-09 19:16:41 - WARNING - Disk I/O information not available for partition: A:\
+2025-05-09 19:16:41 - ERROR - Error retrieving disk information on Windows: cannot access local variable 'partition_read_count' where it is not associated with a value
+2025-05-09 19:16:41 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:16:41 - INFO - Disk check completed successfully
+2025-05-09 19:17:23 - WARNING - Disk I/O information not available for partition: A:\
+2025-05-09 19:17:23 - ERROR - Error retrieving disk information on Windows: cannot access local variable 'partition_read_count' where it is not associated with a value
+2025-05-09 19:17:23 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:17:23 - INFO - Disk check completed successfully
+2025-05-09 19:25:01 - WARNING - Disk I/O information not available for partition: A:\
+2025-05-09 19:25:01 - ERROR - Error retrieving disk information on Windows: cannot access local variable 'partition_read_count' where it is not associated with a value
+2025-05-09 19:25:01 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:25:01 - INFO - Disk check completed successfully
+2025-05-09 19:25:14 - WARNING - Disk I/O information not available for partition: A:\
+2025-05-09 19:25:14 - ERROR - Error retrieving disk information on Windows: cannot access local variable 'partition_read_count' where it is not associated with a value
+2025-05-09 19:25:14 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:25:14 - INFO - Disk check completed successfully
+2025-05-09 19:26:51 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:26:51 - INFO - Disk check completed successfully
+2025-05-09 19:26:58 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:26:58 - INFO - Disk check completed successfully
+2025-05-09 19:27:42 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:27:42 - INFO - Disk check completed successfully
+2025-05-09 19:28:27 - ERROR - Error retrieving disk information on Windows: name 'partition_read_count' is not defined
+2025-05-09 19:28:27 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:28:27 - INFO - Disk check completed successfully
+2025-05-09 19:28:51 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 19:28:51 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:28:51 - INFO - Disk check completed successfully
+2025-05-09 19:28:58 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 19:28:58 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:28:58 - INFO - Disk check completed successfully
+2025-05-09 19:29:36 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 19:29:36 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 19:29:36 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 876751622144 Bytes | Free: 122421764096 Bytes | Percentage Used: 87.7%
+2025-05-09 19:29:36 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481510912 Bytes | Free: 1990899503104 Bytes | Percentage Used: 0.5%
+2025-05-09 19:29:36 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 882872713216 Bytes | Free: 116300673024 Bytes | Percentage Used: 88.4%
+2025-05-09 19:29:36 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 19:29:36 - INFO - Disk check completed successfully
+2025-05-09 21:30:32 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:30:32 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:31:03 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:31:03 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:31:59 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:31:59 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:35:55 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:35:55 - ERROR - Error writing OS information to JSON file: can only concatenate str (not "dict") to str
+2025-05-09 21:36:24 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:36:24 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:39:37 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:39:37 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:46:10 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 21:46:10 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 21:50:01 - INFO - Successfully retrieved CPU information on Windows
+2025-05-09 21:50:01 - INFO - CPU check completed successfully
+2025-05-09 23:07:51 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:07:51 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:07:51 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 23:07:51 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:07:51 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 878637113344 Bytes | Free: 120536272896 Bytes | Percentage Used: 87.9%
+2025-05-09 23:07:51 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:07:51 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481605120 Bytes | Free: 1990899408896 Bytes | Percentage Used: 0.5%
+2025-05-09 23:07:51 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:07:51 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 884663930880 Bytes | Free: 114509455360 Bytes | Percentage Used: 88.5%
+2025-05-09 23:07:51 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:07:51 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:07:51 - INFO - Disk check completed successfully
+2025-05-09 23:08:43 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:08:43 - ERROR - Error retrieving disk information on Windows for partition A:\: unsupported operand type(s) for +: 'float' and 'str'
+2025-05-09 23:08:43 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:08:43 - INFO - Disk check completed successfully
+2025-05-09 23:09:07 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:09:07 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:09:07 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 23:09:07 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:09:07 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 878645133312 Bytes | Free: 120528252928 Bytes | Percentage Used: 87.9%
+2025-05-09 23:09:07 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:09:07 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481609216 Bytes | Free: 1990899404800 Bytes | Percentage Used: 0.5%
+2025-05-09 23:09:07 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:09:07 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 884671549440 Bytes | Free: 114501836800 Bytes | Percentage Used: 88.5%
+2025-05-09 23:09:07 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:09:07 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:09:07 - INFO - Disk check completed successfully
+2025-05-09 23:18:05 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:18:05 - ERROR - Failed to write disk information to check_results.json : not readable
+2025-05-09 23:18:05 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:18:05 - INFO - Disk check completed successfully
+2025-05-09 23:19:09 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 23:19:09 - ERROR - Error writing OS information to JSON file: not readable
+2025-05-09 23:20:38 - INFO - Retrieved OS information: Windows 10.0.26100 ('64bit', 'WindowsPE')
+2025-05-09 23:20:38 - INFO - Successfully wrote OS information to JSON file
+2025-05-09 23:20:54 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:20:54 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:20:54 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 23:20:54 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:20:54 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 878667644928 Bytes | Free: 120505741312 Bytes | Percentage Used: 87.9%
+2025-05-09 23:20:54 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:20:54 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481613312 Bytes | Free: 1990899400704 Bytes | Percentage Used: 0.5%
+2025-05-09 23:20:54 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:20:54 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 884692934656 Bytes | Free: 114480451584 Bytes | Percentage Used: 88.5%
+2025-05-09 23:20:54 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:20:54 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:20:54 - INFO - Disk check completed successfully
+2025-05-09 23:25:30 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:25:30 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:25:30 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 23:25:30 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:25:30 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 878654914560 Bytes | Free: 120518471680 Bytes | Percentage Used: 87.9%
+2025-05-09 23:25:30 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:25:30 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481613312 Bytes | Free: 1990899400704 Bytes | Percentage Used: 0.5%
+2025-05-09 23:25:30 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:25:30 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 884680839168 Bytes | Free: 114492547072 Bytes | Percentage Used: 88.5%
+2025-05-09 23:25:30 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:25:30 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:25:30 - INFO - Disk check completed successfully
+2025-05-09 23:27:46 - INFO - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 Bytes | Used: 2775926378496 Bytes | Free: 1224841945088 Bytes | Percentage Used: 69.4%
+2025-05-09 23:27:46 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:27:46 - INFO - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 Bytes | Used: 276246528 Bytes | Free: 2000104767488 Bytes | Percentage Used: 0.0%
+2025-05-09 23:27:46 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:27:46 - INFO - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 Bytes | Used: 878672564224 Bytes | Free: 120500822016 Bytes | Percentage Used: 87.9%
+2025-05-09 23:27:46 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:27:46 - INFO - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 Bytes | Used: 9481617408 Bytes | Free: 1990899396608 Bytes | Percentage Used: 0.5%
+2025-05-09 23:27:46 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:27:46 - INFO - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 Bytes | Used: 884697608192 Bytes | Free: 114475778048 Bytes | Percentage Used: 88.5%
+2025-05-09 23:27:46 - INFO - Successfully wrote disk information to check_results.json
+2025-05-09 23:27:46 - INFO - Successfully retrieved disk information on Windows
+2025-05-09 23:27:46 - INFO - Disk check completed successfully
+2025-05-09 23:28:03 - INFO - Successfully retrieved CPU information on Windows
+2025-05-09 23:28:03 - INFO - CPU check completed successfully
+2025-05-09 23:35:23 - INFO - __main__ - Successfully retrieved CPU information on Windows
+2025-05-09 23:35:23 - INFO - __main__ - CPU check completed successfully

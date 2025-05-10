@@ -1,0 +1,110 @@
+{
+    "CPU": {
+    "Linux": [
+    "lscpu",
+    "stress-ng",
+    "cpufreq-info",
+    "sensors",
+    "top"
+    ],
+    "Windows": [
+    "wmic cpu get",
+    "winsat cpuformal",
+    "PowerShell Get-Counter",
+    "coreinfo",
+    "tasklist"
+    ],
+    "macOS": [
+    "sysctl -a | grep cpu",
+    "powermetrics",
+    "top"
+    ]
+    },
+    "RAM": {
+    "Linux": [
+    "memtester",
+    "dmidecode -t memory",
+    "free",
+    "vmstat",
+    "cat /proc/meminfo"
+    ],
+    "Windows": [
+    "wmic memorychip",
+    "mdsched.exe",
+    "PowerShell Get-CimInstance Win32_PhysicalMemory",
+    "RAMMap"
+    ],
+    "macOS": [
+    "vm_stat",
+    "sysctl hw.memsize",
+    "top"
+    ]
+    },
+    "Disk": {
+    "Linux": [
+    "smartctl",
+    "badblocks",
+    "hdparm",
+    "lsblk",
+    "df -h",
+    "iostat"
+    ],
+    "Windows": [
+    "wmic diskdrive get status",
+    "chkdsk",
+    "PowerShell Get-PhysicalDisk",
+    "defrag",
+    "fsutil"
+    ],
+    "macOS": [
+    "diskutil list",
+    "diskutil info",
+    "smartmontools"
+    ]
+    },
+    "Network": {
+    "Linux": [
+    "ethtool",
+    "ping",
+    "mtr",
+    "ip addr",
+    "netstat -i",
+    "ss -tuln"
+    ],
+    "Windows": [
+    "netsh interface show interface",
+    "ping",
+    "tracert",
+    "PowerShell Test-NetConnection",
+    "ipconfig /all",
+    "netstat"
+    ],
+    "macOS": [
+    "ifconfig",
+    "netstat",
+    "traceroute",
+    "ping",
+    "lsof -i"
+    ]
+    },
+    "GPU": {
+    "Linux": [
+    "nvidia-smi",
+    "glmark2",
+    "lshw -C display",
+    "vainfo",
+    "clinfo"
+    ],
+    "Windows": [
+    "dxdiag",
+    "wmic path win32_videocontroller",
+    "GPU-Z",
+    "PowerShell Get-WmiObject Win32_VideoController"
+    ],
+    "macOS": [
+    "system_profiler SPDisplaysDataType",
+    "glxinfo",
+    "ioreg -l | grep IGP"
+    ]
+    }
+    }

@@ -1,0 +1,86 @@
+{
+    "scan_interval": 600,
+    "alert_on": ["WARNING", "CRITICAL"],
+    "components_enabled": ["CPU", "RAM", "Disk", "Network", "GPU"],
+  
+    "logging": {
+      "log_to_file": true,
+      "log_directory": "./logs",
+      "max_log_size_mb": 5,
+      "log_retention_days": 30,
+      "log_level": "INFO",
+      "log_format": "timestamped",
+      "rotate_logs": true,
+      "include_stack_traces": true
+    },
+  
+    "database": {
+      "enabled": true,
+      "path": "diagnostic_history.db",
+      "backup_enabled": true,
+      "backup_directory": "./backups",
+      "retention_policy_days": 60,
+      "auto_vacuum": true
+    },
+  
+    "output": {
+      "format": "pretty",
+      "export_json": true,
+      "json_directory": "./logs/json",
+      "json_pretty_print": true,
+      "export_csv": true,
+      "csv_directory": "./logs/csv",
+      "include_component_breakdown": true
+    },
+  
+    "threshold_overrides": {
+      "cpu_temp_warning": 75,
+      "cpu_temp_critical": 85,
+      "ram_usage_warning": 80,
+      "ram_usage_critical": 95,
+      "disk_reallocated_sectors_warning": 5,
+      "disk_reallocated_sectors_critical": 10,
+      "network_packet_loss_warning": 1,
+      "network_packet_loss_critical": 3,
+      "gpu_temp_warning": 75,
+      "gpu_temp_critical": 90
+    },
+  
+    "tools_override": {
+      "CPU": ["stress-ng", "top", "lscpu"],
+      "RAM": ["memtester", "free"],
+      "Disk": ["smartctl", "badblocks", "hdparm"],
+      "Network": ["ping", "ethtool", "ip addr"],
+      "GPU": ["nvidia-smi", "glmark2"]
+    },
+  
+    "notifications": {
+      "enable_alerts": true,
+      "alert_channels": ["email", "cli", "json"],
+      "email": {
+        "enabled": false,
+        "smtp_server": "smtp.example.com",
+        "port": 587,
+        "from": "bounder@example.com",
+        "to": ["admin@example.com"]
+      },
+      "cli_display": {
+        "use_rich_formatting": true,
+        "colorize_output": true
+      }
+    },
+  
+    "scheduler": {
+      "max_concurrent_diagnostics": 3,
+      "retry_on_failure": true,
+      "retry_interval_sec": 60,
+      "grace_period_sec": 15
+    },
+  
+    "debug": {
+      "enable_debug_mode": false,
+      "verbose_tool_output": false,
+      "trace_component_loading": true
+    }
+  }
+  

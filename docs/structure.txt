@@ -1,0 +1,41 @@
+argus-monitor/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── pyproject.toml            # or setup.py + requirements.txt
+│
+├── argus/                    # main package
+│   ├── __init__.py
+│   ├── cli.py                # CLI entrypoint and argument parsing
+│   ├── config.py             # load thresholds, polling intervals, output formats
+│   ├── logger.py             # centralized logging configuration
+│   ├── scheduler.py          # optional: periodic task runner (e.g. APScheduler wrapper)
+│   ├── core.py               # orchestrates individual checks and aggregates results
+│   ├── report.py             # formats and outputs results (console, JSON, etc.)
+│   │
+│   ├── utils/                # helper functions & abstractions
+│   │   ├── __init__.py
+│   │   ├── metrics.py        # parsers for raw values (e.g. convert WMIC output)
+│   │   └── platform.py       # OS‐specific helpers beyond os_detector
+│   │
+│   └── checks/               # each “check” implements a common interface
+│       ├── __init__.py
+│       ├── base.py           # abstract Check class (run(), evaluate(), thresholds)
+│       ├── cpu_check.py      # your existing CPU module :contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
+│       ├── disk_check.py     # your existing Disk module :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+│       ├── gpu_check.py      # your existing GPU module :contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
+│       ├── network_check.py  # your existing Network module :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}
+│       ├── ram_check.py      # your existing RAM module :contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}
+│       └── os_detector.py    # your OS detection helper :contentReference[oaicite:10]{index=10}:contentReference[oaicite:11]{index=11}
+│
+├── tests/                    # pytest suite
+│   ├── conftest.py
+│   ├── test_cpu_check.py
+│   ├── test_disk_check.py
+│   ├── test_gpu_check.py
+│   ├── test_network_check.py
+│   └── test_ram_check.py
+│
+└── docs/
+    ├── architecture.md       # high-level design and data flow
+    └── usage.md              # install & quickstart guide

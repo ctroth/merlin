@@ -1,0 +1,55 @@
+{
+    "CPU": {
+    "metrics": \[
+    {"name": "temperature", "warning": 75, "critical": 85, "weight": 4},
+    {"name": "usage", "warning": 85, "critical": 95, "weight": 3},
+    {"name": "throttling", "critical\_only": true, "weight": 5},
+    {"name": "core\_errors", "warning": 1, "critical": 3, "weight": 4},
+    {"name": "frequency\_drop", "warning": 5, "critical": 15, "weight": 2}
+    ],
+    "insta\_fail": \["thermal\_throttling\_detected", "cpu\_unresponsive"]
+    },
+    "RAM": {
+    "metrics": \[
+    {"name": "usage", "warning": 75, "critical": 90, "weight": 3},
+    {"name": "ecc\_errors", "warning": 1, "critical": 10, "weight": 5},
+    {"name": "temperature", "warning": 60, "critical": 75, "weight": 3},
+    {"name": "latency", "warning": 80, "critical": 120, "weight": 2},
+    {"name": "swap\_fault\_rate", "warning": 50, "critical": 200, "weight": 3},
+    {"name": "health\_status", "warning": 1, "critical": 2, "weight": 4}
+    ],
+    "insta\_fail": \["uncorrectable\_ecc\_error", "ram\_unavailable"]
+    },
+    "Disk": {
+    "metrics": \[
+    {"name": "smart\_health", "critical": true, "weight": 5},
+    {"name": "reallocated\_sectors", "warning": 5, "critical": 10, "weight": 4},
+    {"name": "read\_error\_rate", "warning": 1, "critical": 5, "weight": 4},
+    {"name": "temperature", "warning": 50, "critical": 60, "weight": 3},
+    {"name": "io\_wait\_time", "warning": 10, "critical": 50, "weight": 2},
+    {"name": "bad\_blocks\_detected", "warning": 1, "critical": 3, "weight": 4}
+    ],
+    "insta\_fail": \["smart\_fail", "disk\_not\_detected"]
+    },
+    "Network": {
+    "metrics": \[
+    {"name": "packet\_loss", "warning": 1, "critical": 2, "weight": 4},
+    {"name": "latency", "warning": 100, "critical": 250, "weight": 3},
+    {"name": "interface\_errors", "warning": 1, "critical": 5, "weight": 4},
+    {"name": "link\_speed\_drop", "warning": 500, "critical": 100, "weight": 2},
+    {"name": "disconnection\_rate", "warning": 1, "critical": 3, "weight": 3}
+    ],
+    "insta\_fail": \["interface\_down", "nic\_unavailable"]
+    },
+    "GPU": {
+    "metrics": \[
+    {"name": "temperature", "warning": 75, "critical": 85, "weight": 4},
+    {"name": "memory\_usage", "warning": 80, "critical": 95, "weight": 3},
+    {"name": "fan\_failure", "critical\_only": true, "weight": 5},
+    {"name": "driver\_crash", "critical\_only": true, "weight": 4},
+    {"name": "utilization", "warning": 90, "critical": 98, "weight": 2}
+    ],
+    "insta\_fail": \["gpu\_unavailable", "gpu\_memory\_fault"]
+    }
+    }
+    

@@ -1,0 +1,10 @@
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Retrieved Disk Information | Partition: A:\ | Size: 4000768323584 | Used: 2775926075392 | Free: 1224842248192 | Percentage Used: 69.4%
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Successfully wrote disk information to check_results.json
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Retrieved Disk Information | Partition: B:\ | Size: 2000381014016 | Used: 276246528 | Free: 2000104767488 | Percentage Used: 0.0%
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Successfully wrote disk information to check_results.json
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Retrieved Disk Information | Partition: C:\ | Size: 999173386240 | Used: 880387014656 | Free: 118786371584 | Percentage Used: 88.1%
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Successfully wrote disk information to check_results.json
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Retrieved Disk Information | Partition: D:\ | Size: 2000381014016 | Used: 9482223616 | Free: 1990898790400 | Percentage Used: 0.5%
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Successfully wrote disk information to check_results.json
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Retrieved Disk Information | Partition: G:\ | Size: 999173386240 | Used: 886326333440 | Free: 112847052800 | Percentage Used: 88.7%
+2025-05-10 03:44:55 - INFO - main.checks.disk_check - Successfully wrote disk information to check_results.json

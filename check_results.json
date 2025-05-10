@@ -1,0 +1,72 @@
+[
+  {
+    "Disk Information": {
+      "name": "disk",
+      "status": "OK",
+      "metrics": {
+        "File System": "A:\\",
+        "Disk Size": 4000768323584,
+        "Total Used": 2775926075392,
+        "Total Available": 1224842248192,
+        "Percentage Used": 69.4
+      },
+      "details": "Disk A:\\ is 69.4% full."
+    }
+  },
+  {
+    "Disk Information": {
+      "name": "disk",
+      "status": "OK",
+      "metrics": {
+        "File System": "B:\\",
+        "Disk Size": 2000381014016,
+        "Total Used": 276246528,
+        "Total Available": 2000104767488,
+        "Percentage Used": 0.0
+      },
+      "details": "Disk B:\\ is 0.0% full."
+    }
+  },
+  {
+    "Disk Information": {
+      "name": "disk",
+      "status": "WARN",
+      "metrics": {
+        "File System": "C:\\",
+        "Disk Size": 999173386240,
+        "Total Used": 880387014656,
+        "Total Available": 118786371584,
+        "Percentage Used": 88.1
+      },
+      "details": "Disk C:\\ is 88.1% full."
+    }
+  },
+  {
+    "Disk Information": {
+      "name": "disk",
+      "status": "OK",
+      "metrics": {
+        "File System": "D:\\",
+        "Disk Size": 2000381014016,
+        "Total Used": 9482223616,
+        "Total Available": 1990898790400,
+        "Percentage Used": 0.5
+      },
+      "details": "Disk D:\\ is 0.5% full."
+    }
+  },
+  {
+    "Disk Information": {
+      "name": "disk",
+      "status": "WARN",
+      "metrics": {
+        "File System": "G:\\",
+        "Disk Size": 999173386240,
+        "Total Used": 886326333440,
+        "Total Available": 112847052800,
+        "Percentage Used": 88.7
+      },
+      "details": "Disk G:\\ is 88.7% full."
+    }
+  }
+]
