@@ -70,22 +70,22 @@ Follow these steps to install Merlin Monitor locally or in your environment:
 
 4. **Install core dependencies**
 
-   ```bash
+```bash
    pip install -r requirements.txt
-   ```
+```
 
 5. **(Optional) Editable install for development**
 
-   ```bash
+```bash
    pip install -e .
-   ```
+```
 
 6. **(Optional) Docker deployment**
 
-   ```bash
+```bash
    docker build -t merlin-monitor .
    docker run --rm merlin-monitor status --once
-   ```
+```
 
 7. **(Optional) Kubernetes**
 
@@ -175,7 +175,6 @@ retry_backoff: 5        # Seconds between retry attempts on failure
 max_retries: 3          # Number of retry attempts per check
 log_file: /var/log/merlin-monitor.log
 persist: true           # Enable writing metrics to a local SQLite DB
-
 ```
 
 ## Advanced Usage
@@ -224,16 +223,16 @@ Contributions are highly encouraged:
 2. **Write tests** in the `tests/` directory and aim for high coverage.
 3. **Format code** with Black and check with Flake8 & Mypy:
 
-   ```bash
+```bash
    black merlin tests
    flake8 merlin tests
    mypy merlin
-   ```
+```
 4. **Run tests**:
 
-   ```bash
+```bash
    pytest --maxfail=1 --disable-warnings -q
-   ```
+```
 5. **Open a Pull Request** against the `main` branch, describing changes and rationale.
 
 Please adhere to the existing code style and include documentation updates for any new features.
