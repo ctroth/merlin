@@ -50,37 +50,43 @@ Before installing Merlin Monitor, ensure the following prerequisites are met:
 Follow these steps to install Merlin Monitor locally or in your environment:
 
 1. **Clone the repository**
-   ```bash
+
+```bash
    git clone https://github.com/yourusername/merlin-monitor.git && cd merlin-monitor
 ````
 
 2. **Verify Python version**
 
-   ```bash
+```bash
    python --version  # Expect 3.9 or above
-   ```
+ ```
+
 3. **Set up and activate a virtual environment**
 
-   ```bash
+```bash
    python3 -m venv venv
    source venv/bin/activate    # Windows: venv\\Scripts\\activate
-   ```
+```
+
 4. **Install core dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
+
 5. **(Optional) Editable install for development**
 
    ```bash
    pip install -e .
    ```
+
 6. **(Optional) Docker deployment**
 
    ```bash
    docker build -t merlin-monitor .
    docker run --rm merlin-monitor status --once
    ```
+
 7. **(Optional) Kubernetes**
 
    * Use the provided `k8s/merlin-deployment.yaml` to deploy as a CronJob or DaemonSet.
